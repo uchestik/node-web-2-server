@@ -45,6 +45,12 @@ app.get('/about', (req, res) => {
     })
 })
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Project Page'
+    })
+})
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
